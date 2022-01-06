@@ -1,41 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
 		<title>Aayush Jain</title>
 	</head>
-	<body>
-		<nav>
-			<div><h3>Aayush Jain</h3></div>
-			<div>
-				<a href="#home" class="navLink">home</a>
-				<a href="#work" class="navLink">My work</a>
-				<a href="#projects" class="navLink">projects</a>
-				<a href="mailto:aayushjain1118@gmail.com" class="navLink">
+	<body class="bg-slate-900 text-white">
+		<nav
+			class="
+				bg-slate-800
+				flex
+				justify-between
+				font-mono
+				capitalize
+				md:px-10
+				fixed
+				w-full
+			"
+		>
+			<p class="font-semibold p-2">Aayush Jain</p>
+			<div class="flex">
+				<a
+					href="#home"
+					class="
+						hover:bg-slate-700
+						transition-all
+						rounded-sm
+						duration-200
+						p-2
+					"
+					>home</a
+				>
+				<a
+					href="#work"
+					class="
+						hover:bg-slate-700
+						transition-all
+						rounded-sm
+						duration-200
+						p-2
+					"
+					>My work</a
+				>
+				<a
+					href="#projects"
+					class="
+						hover:bg-slate-700
+						transition-all
+						rounded-sm
+						duration-200
+						p-2
+					"
+					>projects</a
+				>
+				<a
+					href="mailto:aayushjain1118@gmail.com"
+					class="
+						hover:bg-slate-700
+						transition-all
+						rounded-sm
+						duration-200
+						p-2
+					"
+				>
 					Mail
 				</a>
 			</div>
 		</nav>
 
-		<div id="home">
-			<div>
-				<h1>I am a software developer</h1>
+		<div
+			id="home"
+			class="h-full flex flex-col b mx-3 pt-10 md:mx-10 justify-around"
+		>
+			<div class="gap-10 flex flex-col justify-around h-min w-max">
+				<h1 class="text-xl md:text-4xl">I am a software developer</h1>
 				<a href="#work">View my work</a>
 			</div>
-			<img src="/imgs/apple.jpg" alt="" />
 		</div>
 
-		<div id="work">
+		<div id="work" class="h-full">
 			<h2>My Work</h2>
 			<div>
 				<div>
