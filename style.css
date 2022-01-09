@@ -3,9 +3,34 @@
 @tailwind utilities;
 
 @layer components {
-	.btn-blue {
-		@apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+	.nav {
+		@apply bg-slate-800 flex justify-between font-mono capitalize md:px-10 fixed w-full text-xs py-1 md:text-lg;
 	}
+	.navItem {
+		@apply hover:bg-slate-700 transition-all rounded-sm duration-200 p-2;
+	}
+
+	.section {
+		@apply w-10/12 mx-auto flex flex-col;
+	}
+	.sectionTitle {
+		@apply text-xl md:text-2xl text-center font-mono mt-14 mb-5 md:mt-20;
+	}
+	.card {
+		@apply bg-slate-800 border border-slate-800 rounded-xl h-min p-5 flex flex-col gap-2 md:text-base text-sm;
+	}
+	.cardTitleDiv {
+		@apply flex flex-col md:flex-row justify-between items-baseline md:text-lg;
+	}
+	.cardTitle {
+		@apply font-semibold font-mono;
+	}
+	.cardSubtitle {
+		@apply text-xs font-light italic;
+	}
+	/* .cardSecondary {
+		@apply flex flex-col md:flex-row  justify-between items-baseline my-1 md:my-0 gap-1;
+	} */
 }
 
 html,

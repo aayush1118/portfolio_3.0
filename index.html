@@ -8,39 +8,19 @@
 		<title>Aayush Jain</title>
 	</head>
 	<body class="bg-slate-900 text-white">
-		<nav
-			class="bg-slate-800 flex justify-between font-mono capitalize md:px-10 fixed w-full text-xs py-1 md:text-lg"
-		>
+		<nav class="nav">
 			<p class="font-semibold p-2">Aayush Jain</p>
 			<div class="flex">
-				<a
-					href="#home"
-					class="hover:bg-slate-700 transition-all rounded-sm duration-200 p-2"
-					>home</a
-				>
-				<a
-					href="#work"
-					class="hover:bg-slate-700 transition-all rounded-sm duration-200 p-2"
-					>My work</a
-				>
-				<a
-					href="#projects"
-					class="hover:bg-slate-700 transition-all rounded-sm duration-200 p-2"
-					>projects</a
-				>
-				<a
-					href="mailto:aayushjain1118@gmail.com"
-					class="hover:bg-slate-700 transition-all rounded-sm duration-200 p-2"
-				>
+				<a href="#home" class="navItem">home</a>
+				<a href="#work" class="navItem">My work</a>
+				<a href="#projects" class="navItem">projects</a>
+				<a href="mailto:aayushjain1118@gmail.com" class="navItem">
 					Mail
 				</a>
 			</div>
 		</nav>
 
-		<div
-			id="home"
-			class="h-screen w-10/12 mx-auto flex flex-col pt-10 justify-around"
-		>
+		<div id="home" class="h-screen section pt-10 justify-around">
 			<div class="gap-10 flex flex-col justify-around h-min w-max">
 				<h1 class="text-xl md:text-4xl">I am a software developer</h1>
 				<a
@@ -51,31 +31,19 @@
 			</div>
 		</div>
 
-		<div id="work" class="flex flex-col w-10/12 mx-auto">
-			<h2
-				class="text-xl md:text-2xl text-center font-mono mt-14 mb-5 md:mt-20"
-			>
-				My Work
-			</h2>
+		<div id="work" class="section">
+			<h2 class="sectionTitle">My Work</h2>
 			<div
 				class="flex flex-col md:flex-row justify-between gap-8 mx-auto"
 			>
-				<div
-					class="bg-slate-800 border border-slate-800 rounded-xl h-min p-5 flex flex-col gap-1 md:gap-2 md:text-base text-sm"
-				>
-					<div
-						class="text-sky-300 flex flex-col md:flex-row justify-between items-baseline md:text-lg"
-					>
-						<h3 class="font-semibold font-mono">
+				<div class="card">
+					<div class="cardTitleDiv text-sky-300">
+						<h3 class="cardTitle">
 							MicroLearn Education Solutions
 						</h3>
-						<span class="text-xs font-light italic"
-							>Mumbai, Remote</span
-						>
+						<span class="cardSubtitle">Mumbai, Remote</span>
 					</div>
-					<div
-						class="flex flex-col md:flex-row justify-between items-baseline my-1 md:my-0 text-md gap-1"
-					>
+					<div class="cardTitleDiv">
 						<h4 class="font-semibold">
 							Full-Stack Developer Intern
 						</h4>
@@ -89,20 +57,12 @@
 					</p>
 				</div>
 
-				<div
-					class="bg-slate-800 border border-slate-800 rounded-xl h-min p-5 flex flex-col gap-1 md:gap-2 md:text-base text-sm"
-				>
-					<div
-						class="text-sky-300 flex flex-col md:flex-row justify-between items-baseline md:text-lg"
-					>
-						<h3 class="font-semibold font-mono">Skill Inc.</h3>
-						<span class="text-xs font-light italic"
-							>Pune, Remote</span
-						>
+				<div class="card">
+					<div class="cardTitleDiv text-sky-300">
+						<h3 class="cardTitle">Skill Inc.</h3>
+						<span class="cardSubtitle">Pune, Remote</span>
 					</div>
-					<div
-						class="flex flex-col md:flex-row justify-between items-baseline my-1 md:my-0 text-md gap-1"
-					>
+					<div class="cardTitleDiv">
 						<h4 class="font-semibold">Backend Developer Intern</h4>
 						<span class="text-xs font-light"
 							>Jul 2020 - Aug 2020</span
@@ -116,7 +76,7 @@
 			</div>
 		</div>
 
-		<div id="skillset">
+		<div id="skillset" class="section">
 			<h2>Skillset</h2>
 
 			<h4>Languages</h4>
@@ -132,7 +92,7 @@
 			<p>Heroku, Netlify, Firebase, Git</p>
 		</div>
 
-		<div id="projects">
+		<div id="projects" class="section">
 			<h2>Personal Projects</h2>
 
 			<div>
