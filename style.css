@@ -7,7 +7,7 @@
 		@apply bg-slate-800 flex justify-between font-mono capitalize md:px-10 fixed w-full text-xs py-1 md:text-lg;
 	}
 	.navItem {
-		@apply hover:bg-slate-700 transition-all rounded-sm duration-200 p-2;
+		@apply hover:bg-slate-700 transition-colors rounded-sm duration-200 p-2;
 	}
 
 	.section {
@@ -17,7 +17,7 @@
 		@apply text-xl md:text-2xl text-center font-mono mt-14 mb-5 md:mt-20;
 	}
 	.card {
-		@apply bg-slate-800 border border-slate-800 rounded-xl h-min p-5 flex flex-col gap-2 md:text-base text-sm;
+		@apply bg-slate-800 hover:bg-slate-700 hover:bg-opacity-60 transition-colors duration-200 rounded-xl h-min p-5 flex flex-col gap-2 md:text-base text-sm;
 	}
 	.cardTitleDiv {
 		@apply flex flex-col md:flex-row justify-between items-baseline md:text-lg;
@@ -28,9 +28,18 @@
 	.cardSubtitle {
 		@apply text-xs font-light italic;
 	}
-	/* .cardSecondary {
-		@apply flex flex-col md:flex-row  justify-between items-baseline my-1 md:my-0 gap-1;
-	} */
+	.table {
+		@apply hover:bg-slate-700 transition-colors hover:bg-opacity-60 duration-200 grid bg-slate-800 p-5 my-2 rounded-xl md:grid-cols-1-4;
+	}
+	.list-title {
+		@apply text-sky-300 font-mono font-semibold;
+	}
+	.tags {
+		@apply text-xs flex align-middle gap-1 my-1;
+	}
+	.tags > span {
+		@apply bg-slate-600 text-neutral-300 py-1 px-1.5 rounded-md;
+	}
 }
 
 html,
