@@ -28,17 +28,17 @@
 	.cardSubtitle {
 		@apply text-xs font-light italic;
 	}
-	.table {
-		@apply hover:bg-slate-700 transition-colors hover:bg-opacity-60 duration-200 grid bg-slate-800 p-5 my-2 rounded-xl md:grid-cols-1-4;
+	.card2 {
+		@apply hover:bg-slate-700 transition-colors hover:bg-opacity-60 duration-200 grid  bg-slate-800 p-5 my-2 rounded-xl md:grid-cols-1-4;
 	}
 	.list-title {
 		@apply text-sky-300 font-mono font-semibold;
 	}
 	.tags {
-		@apply text-xs flex align-middle gap-1 my-1;
+		@apply text-xs flex items-center gap-1 my-1 flex-wrap;
 	}
 	.tags > span {
-		@apply bg-slate-600 text-neutral-300 py-1 px-1.5 rounded-md;
+		@apply bg-slate-600 text-neutral-300 py-1 px-1.5 rounded-md w-max;
 	}
 }
 
