@@ -4,7 +4,8 @@
 
 @layer components {
 	.nav {
-		@apply bg-slate-800 flex justify-between font-mono capitalize md:px-10 fixed w-full text-xs py-1 md:text-lg;
+		@apply bg-slate-800 flex justify-between font-mono capitalize md:px-10 fixed w-full text-xs 
+		py-1 md:text-lg z-10 backdrop-blur-lg bg-opacity-80;
 	}
 	.navItem {
 		@apply hover:bg-slate-700 transition-colors rounded-sm duration-200 p-2;
@@ -17,7 +18,8 @@
 		@apply text-xl md:text-2xl text-center font-mono mt-14 mb-5 md:mt-20;
 	}
 	.card {
-		@apply bg-slate-800 hover:bg-slate-700 hover:bg-opacity-60 transition-colors duration-200 rounded-xl h-min p-5 flex flex-col gap-2 md:text-base text-sm;
+		@apply bg-slate-900 w-full hover:bg-slate-800  transition-colors duration-200
+		 rounded-xl h-min p-5 flex flex-col gap-2 md:text-base text-sm backdrop-blur-lg bg-opacity-30;
 	}
 	.cardTitleDiv {
 		@apply flex flex-col md:flex-row justify-between items-baseline md:text-lg;
@@ -29,7 +31,8 @@
 		@apply text-xs font-light italic;
 	}
 	.card2 {
-		@apply hover:bg-slate-700 transition-colors hover:bg-opacity-60 duration-200 grid  bg-slate-800 p-5 my-2 rounded-xl;
+		@apply hover:bg-slate-800 transition-colors  duration-200 grid 
+		backdrop-blur-lg bg-opacity-30 bg-slate-900 p-5 my-2 rounded-xl;
 	}
 	.list-title {
 		@apply text-sky-300 font-mono font-semibold;
@@ -42,9 +45,12 @@
 	}
 }
 
-html,
+html {
+	height: 100vh;
+}
+
 body {
-	height: 100%;
+	height: max-content;
 }
 
 :root {
