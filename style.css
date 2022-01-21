@@ -29,7 +29,7 @@
 		@apply text-xs font-light italic;
 	}
 	.card2 {
-		@apply hover:bg-slate-700 transition-colors hover:bg-opacity-60 duration-200 grid  bg-slate-800 p-5 my-2 rounded-xl md:grid-cols-1-4;
+		@apply hover:bg-slate-700 transition-colors hover:bg-opacity-60 duration-200 grid  bg-slate-800 p-5 my-2 rounded-xl;
 	}
 	.list-title {
 		@apply text-sky-300 font-mono font-semibold;

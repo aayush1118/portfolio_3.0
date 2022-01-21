@@ -20,21 +20,49 @@
 			</div>
 		</nav>
 
-		<div id="home" class="h-screen section pt-10 justify-around">
-			<div class="gap-10 flex flex-col justify-around h-min w-max">
+		<div
+			id="home"
+			class="h-screen section py-5 items-stretch justify-between"
+		>
+			<div class="gap-10 flex flex-col justify-center h-full">
 				<h1 class="text-xl md:text-4xl">I am a software developer</h1>
 				<a
 					href="#work"
-					class="w-max border border-slate-700 p-3 rounded-full hover:bg-slate-800 transition-all duration-500 font-mono lowercase"
+					class="bg-slate-200 text-slate-900 hover:text-white hover:bg-slate-800 w-max p-3 rounded-lg transition-colors duration-500 font-mono lowercase"
 					>View my work</a
 				>
+			</div>
+			<div class="font-mono flex flex-col">
+				<div class="card2 flex justify-evenly max-w-md">
+					<a
+						href="http://github.com/aayush_1118"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="list-title"
+						>github</a
+					>
+					<a
+						href="https://www.linkedin.com/in/aayushdev/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="list-title"
+						>linkedin</a
+					>
+					<a
+						href="https://www.instagram.com/stillaayush/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="list-title"
+						>instagram</a
+					>
+				</div>
 			</div>
 		</div>
 
 		<div id="work" class="section">
 			<h2 class="sectionTitle">My Work</h2>
 			<div
-				class="flex flex-col md:flex-row justify-between gap-8 mx-auto"
+				class="flex flex-col md:flex-row justify-between gap-4 mx-auto"
 			>
 				<div class="card">
 					<div class="cardTitleDiv text-sky-300">
@@ -76,30 +104,10 @@
 			</div>
 		</div>
 
-		<div id="skillset" class="section">
-			<h2 class="sectionTitle">Skillset</h2>
-			<div class="card2">
-				<h4 class="list-title">Languages</h4>
-				<p>Python, Javascript, SQL</p>
-			</div>
-
-			<div class="card2">
-				<h4 class="list-title">Technologies</h4>
-				<p>
-					NodeJs, React, Redux, Express, Mongoose, JWT, Figma, HTML,
-					CSS, Sass, Bootstrap
-				</p>
-			</div>
-			<div class="card2">
-				<h4 class="list-title">Platforms</h4>
-				<p>Heroku, Netlify, Firebase, Git</p>
-			</div>
-		</div>
-
-		<div id="projects" class="section pb-20">
+		<div id="projects" class="section">
 			<h2 class="sectionTitle">Personal Projects</h2>
 
-			<div class="md:grid-cols-2 md:grid md:gap-x-4">
+			<div class="md:grid-cols-2 md:grid md:gap-x-4 grid gap-2">
 				<div class="card2">
 					<h3 class="list-title">Image Classifier</h3>
 					<div class="tags">
@@ -155,6 +163,26 @@
 						dictionary api to search and store definitions.
 					</p>
 				</div>
+			</div>
+		</div>
+
+		<div id="skillset" class="section pb-20">
+			<h2 class="sectionTitle">Skillset</h2>
+			<div class="card2 md:grid-cols-1-4">
+				<h4 class="list-title">Languages</h4>
+				<p>Python, Javascript, SQL</p>
+			</div>
+
+			<div class="card2 md:grid-cols-1-4">
+				<h4 class="list-title">Technologies</h4>
+				<p>
+					NodeJs, React, Redux, Express, Mongoose, JWT, Figma, HTML,
+					CSS, Sass, Bootstrap
+				</p>
+			</div>
+			<div class="card2 md:grid-cols-1-4">
+				<h4 class="list-title">Platforms</h4>
+				<p>Heroku, Netlify, Firebase, Git</p>
 			</div>
 		</div>
 	</body>
