@@ -10,6 +10,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.fog.min.js"></script>
 	</head>
 	<body class="bg-slate-900 text-white">
+		<div id="background" class="w-screen h-screen fixed -z-10"></div>
 		<nav class="nav">
 			<p class="font-semibold p-2">Aayush Jain</p>
 			<div class="flex">
@@ -190,20 +191,23 @@
 
 		<!-- background render -->
 		<script>
+			const options = {
+				el: '#background',
+				minHeight: 200.0,
+				minWidth: 200.0,
+				highlightColor: 0x253f4b,
+				midtoneColor: 0x101b34,
+				lowlightColor: 0x00cbd0,
+				baseColor: 0x0f172a,
+			};
 			if (
 				!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
 					navigator.userAgent
 				)
 			) {
-				VANTA.FOG({
-					el: 'body',
-					minHeight: 200.0,
-					minWidth: 200.0,
-					highlightColor: 0x253f4b,
-					midtoneColor: 0x101b34,
-					lowlightColor: 0x00cbd0,
-					baseColor: 0x0f172a,
-				});
+				VANTA.FOG(options);
+			} else {
+				VANTA.FOG({ ...options, zoom: 0.5 });
 			}
 		</script>
 	</body>
